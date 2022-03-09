@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.brainlady img{
+  position:absolute;
+  max-width: 14%;
+  left:86%;
+}
+
+#character {
+  position: relative;
+  transform: translate3d(50px,50px,0);
+  transition: transform .3s ease-in;
+}
+
+#contentContainer{
+  position: relative;
+  cursor:help;
+}
+
+.roller{
+  position:absolute;
+  left:80%;
+  top: 40%;
+}
