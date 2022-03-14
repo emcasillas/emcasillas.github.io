@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.brainlady img{
+  position:absolute;
+  max-width: 14%;
+  left:86%;
+}
+
+.roller{
+  position:absolute;
+  left:1200px;
+  top: 300px;
+}
+
+.leading{
+  position: absolute;
+  font-family: "broadsheet",serif; 
+  font-size:24px;
+  color:#00006E;
+  left: 90px;
+  top:-5px;
+  z-index: 550;
+  animation: fade-inout 1s infinite alternate;
+}
+
+/* got animation code from this youtube video: https://youtu.be/jD_8FLePHZU */
+@keyframes fade-inout{
+  0%{opacity: 1;}
+  100%{opacity:0;}
+}
+
+
