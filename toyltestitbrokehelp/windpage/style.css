@@ -1,0 +1,55 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+.brainlady img{
+  position:absolute;
+  max-width: 14%;
+  left:86%;
+}
+
+/* .leaf img{
+  position:absolute;
+  max-width:14%;
+} */
+
+.leading{
+  position: absolute;
+  background-color: #FBDDFC;
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius*/
+  border-radius: 50% 20% / 10% 40%;
+  font-family: "broadsheet",serif; 
+  font-size:24px;
+  color:#00006E;
+  left: 90px;
+  top:-5px;
+  z-index: 550;
+  animation: fade-inout 1s infinite alternate;
+}
+
+.poem3{
+  position: absolute;
+  background-color: #FBDDFC;
+  border-radius: 50% 20% / 10% 40%;
+  text-decoration: dotted underline #00006E;
+  font-family: "broadsheet",serif; 
+  font-size:40px;
+  color:#00006E;
+  left: 290px;
+  top:40px;
+  z-index: 550;
+  margin-top: 0px;
+}
+
+
+/* got animation code from this youtube video: https://youtu.be/jD_8FLePHZU */
+@keyframes fade-inout{
+  0%{opacity: 1;}
+  100%{opacity:0;}
+}
+
+
