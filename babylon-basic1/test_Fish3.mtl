@@ -1,0 +1,14 @@
+# Blender MTL File: 'test_Fish.blend'
+# Material Count: 1
+
+newmtl MI_Fish.001
+Ns 179.999996
+Ka 1.000000 1.000000 1.000000
+Kd 0.588000 0.588000 0.588000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Bump D:\\Rahul\\Bless Unleashed monsters 8\\new robot\\test_Fish\\tex\\Tex_Fish_Normal.tga
+map_Kd D:\\Rahul\\Bless Unleashed monsters 8\\new robot\\test_Fish\\tex\\Tex_Fish_basecolor.tga
