@@ -1,0 +1,42 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+canvas {
+  display: block;
+}
+
+pre{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+}
+
+h1{
+  color: black;
+  position:absolute;
+  background-color: none;
+  font-size:12pt;
+  top:582px;
+  left:278px;
+}
+
+h2{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+  top:180px;
+  left:778px;
+}
+
+.passform{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+  top:290px;
+  left:838px;
+}
