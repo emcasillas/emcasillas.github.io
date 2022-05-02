@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  background-color: black;
+}
+canvas {
+  display: block;
+}
+
+pre{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+}
+
+h1{
+  color: #39FF14;
+  position:absolute;
+  background-color: none;
+  font-size:13pt;
+  font-weight: 100;
+}
+
+h2{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+  top:180px;
+  left:778px;
+  z-index:550;
+}
+
+h3{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:24pt;
+  top:212px;
+  left:888px;
+  z-index:500;
+  opacity:25%;
+}
+/* .passform{
+  position:absolute;
+  background-color: none;
+  color:#39FF14;
+  font-size:12pt;
+  top:290px;
+  left:838px;
+} */
+.button{
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+  font-size:12pt;
+  cursor:none;
+	font: inherit;
+	outline: inherit;
+  position:absolute;
+  color:#39FF14;
+  top:113px;
+  left:302px;
+  text-decoration: none;
+}
+.spiral img{
+  position: absolute;
+  top:-40px;
+  left:760px;
+  max-width: 50%;
+}
+.me{
+  position: absolute;
+  color:#39FF14;
+  font-size: 80px;
+  top:270px;
+  left:320px;
+}
+

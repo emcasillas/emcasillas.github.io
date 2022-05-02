@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  background-color: black;
+}
+canvas {
+  display: block;
+}
+
+.boohrah img{
+  position:absolute;
+  max-width:48%;
+  height: auto;
+  left:28%;
+  cursor:help;
+}
+
+.dog{
+  position:absolute; 
+  left:9%;
+  top: 19%; 
+  cursor:help;
+}
+
+.finger{
+  position:absolute; 
+   left:79%;
+  top: 22%;
+  cursor:help;
+}
+
+.light img{
+  position:absolute;
+   left:39%;
+  top: 30%;
+  max-width: 18%;
+  height:auto;
+  cursor:help;
+}
+
+.eye img{
+   position:absolute;
+   left:20%;
+  top: 54%; 
+  max-width: 16%;
+  height:auto;
+  cursor:help;
+}
+
+.street img{
+  position:absolute; 
+   left:59%;
+  top: 39%;
+  max-width: 18%;
+  height:auto;
+  cursor:help;
+} 
+
+h1{
+  color:rgb(0, 255, 0);
+  position:absolute; 
+   left:59%;
+   top: 29%;
+   font-size:18px;
+}
+
+.drawdot{
+  position: absolute;
+  cursor:help;
+  left:59%;
+  top: 29%;  
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  filter: blur(4px);
+  background-color: #191819;
+  animation: fade-inout .75s infinite alternate;
+}
+
+@keyframes fade-inout{
+  0%{opacity: 1;}
+  100%{opacity:0;}
+}
