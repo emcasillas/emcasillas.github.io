@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+   .clear { clear: both; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+/*font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Share Tech Mono', monospace;*/
+
+/*
+#1D1A31 dark purple 
+#887A71 light brown
+#FFF5E6 off white
+#B3E16E light green
+#C33149 pinkish red
+*/
+
+/* ======================================================
+   GENERAL RULES
+   ====================================================== */
+
+
+/* To make images responsive. They'll be as big as their parent element: */
+img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+#back{
+text-align: left;
+font-family: 'Share Tech Mono', monospace;
+color: #FFF5E6;
+font-size: 50px;
+text-shadow: -1px 1px #1D1A31ED;
+}
