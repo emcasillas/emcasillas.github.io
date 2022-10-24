@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lightbox</title>
+
+<!--lightbox styles:-->
+<link rel="stylesheet" href="css/jquery.fancybox.css" />
+
+<!--script library:-->
+<script src="js/jquery-3.6.0.min.js"></script>
+
+<!--lightbox script:-->
+<script src="js/jquery.fancybox.min.js"></script>
+<!--(activation script at the bottom of the HTML)-->
+<!-- For more details: https://fancyapps.com/docs/ui/fancybox/ -->
+
+
+
+
+
+<!--some styles for this demo:-->
+
+<style>
+
+/* image gallery styles: */
+.gallery-image {
+	width: 25%;
+	float: left;
+	margin: 2%;
+}
+.gallery-image img {
+	width: 100%;
+	height: auto;
+}
+
+/* styles for the mouse over effect: */
+.hovertext a {
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	text-decoration: none;
+	background-color: hsla(0, 0%, 0%, 0.8);
+	opacity:0;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	-webkit-transition:opacity 0.5s ease-in-out;
+	-moz-transition:opacity 0.5s ease-in-out;
+	-o-transition:opacity 0.5s ease-in-out;
+	transition:opacity 0.5s ease-in-out;
+	z-index: 99;
+}
+.hovertext a:hover {
+	opacity:.70;
+	zoom: 1;
+	filter: alpha(opacity=80);
+	-webkit-transition:opacity 0.3s ease-in-out;
+	-moz-transition:opacity 0.3s ease-in-out; 
+	-o-transition:opacity 0.3s ease-in-out;  
+   	transition:opacity 0.3s ease-in-out;
+	z-index: 99;	
+}
+.hovertext p {
+	position: absolute;
+	padding: 10px 20px 10px 20px;
+	bottom: 0px;
+	left: 0px;
+	font-size: 18px;
+	color: #FFF;
+	z-index: 999;
+	zoom: 1;
+	filter: alpha(opacity=100);
+}
+.hl-text {
+	padding: 15px 15px;
+	background-color: rgba(255,255,255,0.50);
+}
+.hoverdiv {
+	position: relative;
+}
+
+hr {
+	clear: both;
+}
+</style>
+
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+<h1>Lightbox</h1>
+
+<hr>
+
+
+<h2>Simple image lightbox</h2>
+<p>A click on the small image opens up a big one in the lightbox</p>
+
+<div class="gallery-image">
+
+<a data-fancybox="simple-image" href="images/image-1-large.jpg"><img src="images/image-1-small.jpg"></a>
+<img data-fancybox="" data-caption="image caption" href="images/image-1-large.jpg">
+
+</div><!-- end gallery-image -->
+
+
+<hr>
+
+
+
+
+
+
+<h2>Simple image gallery</h2>
+<p>A click on the small image opens up a big one in the lightbox. Once the lightbox is open the other images can be accessed with left and right arrows.</p>
+
+<div class="gallery-image">
+
+<a data-fancybox="gallery-1" href="images/image-1-large.jpg"><img src="images/image-1-small.jpg"></a>
+<img data-fancybox="" data-caption="image caption" href="images/image-1-large.jpg">
+
+</div><!-- end gallery-image -->
+
+<div class="gallery-image">
+
+<a data-fancybox="gallery-1" href="images/image-2-large.jpg"><img src="images/image-2-small.jpg"></a>
+<img data-fancybox="" data-caption="image caption" href="images/image-1-large.jpg">
+
+</div><!-- end gallery-image -->
+
+<div class="gallery-image">
+
+<a data-fancybox="gallery-1" href="images/image-3-large.jpg"><img src="images/image-3-small.jpg"></a>
+<img data-fancybox="" data-caption="image caption" href="images/image-1-large.jpg">
+
+</div><!-- end gallery-image -->
+
+
+
+<hr>
+
+
+
+
+
+
+
+<h2>Hidden Gallery</h2>
+<p>A click on one small image opens up a series of big images in the lightbox</p>
+
+<div class="gallery-image">
+
+<a data-fancybox="hidden-gallery" href="images/image-1-large.jpg"><img src="images/image-1-small.jpg"></a>
+<img data-fancybox="" data-caption="image caption" href="images/image-1-large.jpg">
+
+<a class="fancybox-is-hidden" data-fancybox="hidden-gallery" data-caption="image caption" href="images/image-2-large.jpg"></a> 
+<a class="fancybox-is-hidden" data-fancybox="hidden-gallery" data-caption="image caption" href="images/image-3-large.jpg"></a> 
+
+</div><!-- end gallery-image -->
+
+
+
+<hr>
+
+
+
+
+
+
+
+<h2>Mouse over description layer</h2>
+<p>Simple gallery with mouseovers</p>
+
+
+<div class="gallery-image">
+
+<div class="hoverdiv">
+<div class="hovertext">
+<a data-fancybox="gallery-2" data-caption="image caption" href="images/image-1-large.jpg">
+<p>mouseover text</p></a> 
+<img src="images/image-1-small.jpg" alt=""/>
+</div><!-- end hovertext -->
+</div><!-- end hoverdiv -->
+
+</div><!-- end gallery-image -->
+
+
+
+<div class="gallery-image">
+
+<div class="hoverdiv">
+<div class="hovertext">
+<a data-fancybox="gallery-2" data-caption="image caption" href="images/image-2-large.jpg">
+<p>mouseover text</p></a> 
+<img src="images/image-2-small.jpg" alt=""/>
+</div><!-- end hovertext -->
+</div><!-- end hoverdiv -->
+
+</div><!-- end gallery-image -->
+
+
+
+<hr>
+
+
+
+
+
+
+
+
+
+<!--Script to activate Lightbox with options: -->
+
+<script type="text/javascript">
+	$("[data-fancybox]").fancybox({
+		loop     : true,
+		wheel : false,
+		buttons : [
+    	'zoom',,
+		'close'
+  ]	
+	});
+</script>
+
+
+
+
+
+
+
+</body>
+</html>

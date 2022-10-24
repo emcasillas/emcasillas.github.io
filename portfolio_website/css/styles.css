@@ -1,0 +1,416 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+   padding: 0;
+   margin: 0;
+   font-size: 100%;
+   font-weight: normal;
+    list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+}
+/* Clearfix to make floated elements behave correctly: */
+   .cf:before, .cf:after { content: ""; display: table; }
+   .cf:after { clear: both; }
+   .cf { zoom: 1; }
+   .clear { clear: both; }
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+/* ======================================================
+   GENERAL RULES
+   ====================================================== */
+
+
+/* To make images responsive. They'll be as big as their parent element: */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* First always define font-family and font-sizes */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+h1 {
+    font-size: 4em;
+    margin-bottom: 1em;
+}
+h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+h3 {
+    font-size: 20pt;
+    margin-bottom: 1em;
+}
+p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: grey;
+}
+
+
+
+
+/* ======================================================
+   Navigation
+   ====================================================== */
+   
+a .nav-dot {
+    width: 40px;
+    height: 40px;
+    background: black;
+    position: fixed;
+    z-index: 3;
+    right: 3%;
+    top: 20px;
+    border-radius: 50%;
+}
+a:hover .nav-dot {
+    background: white;
+    border: 1px solid black;
+}
+
+
+
+
+/* Background type for Home Page and Projects */
+.type-section-outline {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: black;
+}
+.type-section-fill {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: black; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: black;
+}
+.transparent {
+    opacity: 0;
+}
+
+
+
+
+
+
+/* ======================================================
+   Home Page
+   ====================================================== */
+
+.image-grid {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    margin: 70px auto;
+}
+.grid-image {
+    width: 29.333%;
+    margin: 20px 2%;
+    float: left;
+}
+.image-grid h2 {
+    margin: 0px 0px 0px 2%;
+}
+.projects h2 {
+    font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+
+
+/* ======================================================
+   Dark Page
+   ====================================================== */
+
+.dark {
+    background: #1E1E1E;
+    color: white;
+}
+/* Background type for dark Page */
+.dark .type-section-outline {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: #1E1E1E; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: #4f4f4f;
+}
+.dark .type-section-fill {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: #1E1E1E; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: #4f4f4f;
+}
+/* Navigation on dark Page */
+.dark a .nav-dot {
+    width: 40px;
+    height: 40px;
+    background: white;
+    position: fixed;
+    z-index: 3;
+    right: 3%;
+    top: 20px;
+    border-radius: 50%;
+}
+.dark a:hover .nav-dot {
+    background: none;
+    border: 1px solid white;
+}
+
+.dark h2{    
+	font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+/* ======================================================
+   Project Page
+   ====================================================== */
+
+
+
+.project h1 {
+	font-weight: 600;
+	font-size: 3.5em;
+    margin: 0em 0px 1em 2%;
+}
+.project p, .project h2 {
+    margin: 1em 0px 0em 2%;
+}
+.project h2 {
+   font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.image-large {
+    width: 96%;
+    margin: 20px 2%;
+}
+.image-medium {
+    width: 32%;
+    margin: 20px 2%;
+    float: left;
+    position: relative;
+}
+.image-small {
+    width: 29.33%;
+    margin: 20px 2%;
+    float: left;
+}
+.image-links{
+	width: 12%;
+    margin:0px 2%;
+    position: relative;
+}
+.image-socials{
+	width: 12%;
+    margin:0px 25%;
+    float: left;
+}
+.image-grid-masonry {
+    position: relative;
+    z-index: 2;
+    width: 85%;
+    margin: 20px auto;
+}
+.image-grid-contact{
+	position: relative;
+    z-index: 2;
+    width: 85%;
+    margin: 0px auto;
+}
+
+.description {
+    margin: 50px 0% 100px 0%;
+	font-size: 1em;
+}
+.caption {
+    display: block;
+    margin: 10px 0px 0px 0px;
+}
+.space {
+    clear: both;
+    height: 100px;
+}
+
+.gallery-image{
+    width: 49.333%;
+    margin: 10px 2% -30px;
+	}
+body.fancybox-active {
+  overflow: hidden; }
+
+body.fancybox-iosfix {
+  position: fixed;
+  left: 0;
+  right: 0; }
+
+.fancybox-is-hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden; }
+  
+.hidden {
+    position: relative;
+}
+.hidden-box-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    left: 9px;
+    top: 9px;
+    z-index: -1;
+}
+.hidden-box-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid black;
+    left: 18px;
+    top: 18px;
+    z-index: -2;
+}
+
+  
+  
+/* ======================================================
+   About Page
+   ====================================================== */
+.about{
+    background: #1E1E1E;
+	color: white;
+}
+.about-image{
+	width: 29.33%;
+    margin: 20px 2%;
+    float: right;
+}
+.about_h3{
+	margin: 50px 0px 100px 0px;
+}
+.about .type-section-outline {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: #1E1E1E; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: #4f4f4f;
+}
+.about .type-section-fill {
+    width: 300%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10vw;
+    font-weight: 900;
+    text-align: center;
+    -webkit-text-fill-color: #1E1E1E; 
+    -webkit-text-stroke-width: 0.004em;
+    -webkit-text-stroke-color: #4f4f4f;
+}
+
+.about_h2:link{
+    text-decoration: none;
+    color: white;
+}
+/* ======================================================
+   Personal Emma Casillas Page
+   ====================================================== */
+.page-header {
+    width: 85%;
+    margin: 70px auto;
+    position: relative;
+    z-index: 2;
+}
+.personal h2{
+    font-weight: 900;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin: 0px 2% 0px 2%;
+}
+
+
+/* ======================================================
+   Media Queries
+   ====================================================== */
+
+@media (max-width: 768px ) { 
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.grid-image {
+    width: 46%;
+    margin: 10px 2%;
+}
+.image-small {
+    width: 46%;
+    margin: 10px 2%;
+}
+} 
+
+
+
+
+
